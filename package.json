@@ -1,0 +1,29 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "Desafio Tecnico Linx",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusAlbrecht/desafioLinx.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Matheus Ferraz Albrecht",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MatheusAlbrecht/desafioLinx/issues"
+  },
+  "homepage": "https://github.com/MatheusAlbrecht/desafioLinx#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.3.2",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
