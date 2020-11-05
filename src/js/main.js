@@ -3,6 +3,7 @@ import '../scss/navlinks.scss';
 import '../scss/transition.scss';
 import '../scss/contact.scss';
 import '../scss/divider.scss';
+import '../scss/products.scss';
 import '../scss/share.scss';
 
 document.querySelector(".transition.top").style.setProperty("border-right",`${screen.width}px solid transparent`)
