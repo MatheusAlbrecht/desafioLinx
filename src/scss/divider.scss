@@ -3,7 +3,7 @@
     font-size: 18px;
     text-align: center;
     width: 100%;					
-    margin: 40px auto;
+    margin: 40px auto;    
 }
 .divider span { display: table-cell; position: relative; }
 .divider span:first-child, .divider span:last-child {
@@ -18,7 +18,7 @@
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
 }
 .divider span:nth-child(2) {
-    color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+    color: #888888; padding: 5px 5px; width: auto; white-space: nowrap;
 }
 .divider span:last-child {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));

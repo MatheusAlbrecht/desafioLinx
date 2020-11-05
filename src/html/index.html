@@ -13,13 +13,13 @@
                 <h3>especial para você</h3>
                 <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
                 <div class='nav-links'>
-                    <a>Conheça a Linx</a>
-                    <a>Ajude o algorítimo</a>
-                    <a>Seus produtos</a>
-                    <a>Compartilhe</a>
-                </div>
-                <div class="transition--white-left-bottom"></div>
-            </div>            
+                    <a href="https://www.linx.com.br/" target="_blank">Conheça a Linx</a>
+                    <a href="#contact">Ajude o algorítimo</a>
+                    <a href="#products">Seus produtos</a>
+                    <a href="#share">Compartilhe</a>
+                </div>                
+            </div>
+            <div class="transition top"></div>        
         </header>
         <section id="contact">
             <div class="container">
@@ -34,17 +34,17 @@
                 </div>
                 <div class="contact-form">
                     <form>
-                        <label>Seu Nome</label>
-                        <input type="text"/>
-                        <label>E-mail</label>
-                        <input type="text"/>
-                        <label>CPF</label>
-                        <input type="text"/>                        
-                        <input type="radio" id="masculino" name="sexo" value="masculino">
-                        <label for="male">Masculino</label><br>
-                        <input type="radio" id="feminino" name="sexo" value="feminino">
-                        <label for="female">Feminino</label><br>
-                        <input type="submit" value="Enviar"></input>
+                        <label for="contact-name">Seu Nome</label>
+                        <input id="contact-name" type="text" class="text-input"/>
+                        <label for="contact-email">E-mail</label>
+                        <input id="contact-email" type="text" class="text-input"/>
+                        <label for="contact-cpf">CPF</label>
+                        <input id="contact-cpf" type="text" class="text-input"/>                        
+                        <input id="contact-gender-male" type="radio" name="sexo" value="masculino">
+                        <label for="contact-gender-male">Masculino</label>
+                        <input id="contact-gender-female" type="radio" name="sexo" value="feminino">
+                        <label for="contact-gender-female">Feminino</label>
+                        <input id="contact-submit" type="submit" value="Enviar"></input>
                     </form>
                 </div>
             </div>
@@ -66,22 +66,28 @@
                     <span>Compartilhe a novidade</span>
                     <span></span>
                 </div>
-                <div>
+                <div class="share-info">
                     <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
                     <form>
-                        <label for="friendName">Nome do seu amigo:</label>
-                        <input id="friendName"/>
-                        <label for="friendEmail">E-mail:</label>
-                        <input id="friendEmail"/>
-                        <input type="submit"/>
+                        <div>
+                            <label for="friendName">Nome do seu amigo:</label>
+                            <input id="friendName"/>
+                        </div>
+                        <div>
+                            <label for="friendEmail">E-mail:</label>
+                            <input id="friendEmail"/>
+                        </div>
+                        <input type="submit" value="Enviar Agora"/>
                     </form>
                 </div>
             </div>
         </section>        
         <footer>
-            <div class="container">
-                <div class="transition--white-top-left"></div>
-                <p>Testando suas habilidades em HTML, CSS e JS. Linx Impulse 2019</p>
+            <div class="transition bottom"></div>
+            <div class="container">                
+                <p>Testando suas habilidades em HTML, CSS e JS.</p>
+                <p>Linx Impulse</p> 
+                <p>2019</p>
             </div>           
         </footer>
     </body>
