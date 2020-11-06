@@ -1,15 +1,17 @@
 # desafioLinx
 Projeto para Desafio Técnico p/ Linx
 
-#Instalação
+#Instalação das depências
 ```
 npm install
 ```
-#Rodar modo desenvolvimento
+Código tem duas versões, a desktop e a mobile, cada uma com sua inicialização e arquivos separados
+#Para rodar o modo de desenvolvimento:
 ```
-npm run start:dev
+npm run start: [ desktop | mobile ]
 ```
+Da mesma forma, para buildar para "produção" ou um live preview, temos dois commandos de build
 #Buildar para produção/live preview
 ```
-npm run build
+npm run build: [desktop | mobile]
 ```

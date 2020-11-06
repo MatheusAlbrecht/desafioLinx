@@ -1,6 +1,6 @@
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, './dist');
+var BUILD_DIR = path.resolve(__dirname, '../dist');
 var DESK_DIR = path.resolve(__dirname, './src/desktop');
 var MOB_DIR = path.resolve(__dirname, './src/mobile');
 var EMAIL_DIR = path.resolve(__dirname, './src/email');
