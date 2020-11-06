@@ -6,5 +6,10 @@ import '../scss/divider.scss';
 import '../scss/products.scss';
 import '../scss/share.scss';
 
-document.querySelector(".transition.top").style.setProperty("border-right",`${screen.width}px solid transparent`)
-document.querySelector(".transition.bottom").style.setProperty("border-left",`${screen.width}px solid transparent`)
+import {resolveProductsRequest} from "../js/products.js";
+import {requestProducts} from "./requisition.js";
+
+document.querySelector(".transition.top").style.setProperty("border-right",`${screen.width}px solid transparent`);
+document.querySelector(".transition.bottom").style.setProperty("border-left",`${screen.width}px solid transparent`);
+
+requestProducts(1, resolveProductsRequest);
