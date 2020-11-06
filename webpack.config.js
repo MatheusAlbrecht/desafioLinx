@@ -1,38 +1,26 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+var path = require('path');
 
+var BUILD_DIR = path.resolve(__dirname, './dist');
+var DESK_DIR = path.resolve(__dirname, './src/desktop');
+var MOB_DIR = path.resolve(__dirname, './src/mobile');
+var EMAIL_DIR = path.resolve(__dirname, './src/email');
 
-module.exports = {
-  entry: {
-    main: [
-      './src/js/main.js',
-      './src/js/products.js',
-      './src/js/requisition.js',
-      './src/js/validation.js'
-    ]
-  },
-  mode: "development",
-  devServer:{
-    open: true,
-    port: 8080
-  },
-  module: {
-    rules: [
-      {
-        test: /\.scss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      },
-    ],
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
-  },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/html/index.html'
-    })
-  ]
-};
+const configDirs = {
+  BUILD_DIR: BUILD_DIR,
+  DESK_DIR: DESK_DIR,
+  MOB_DIR: MOB_DIR,
+  EMAIL_DIR: EMAIL_DIR
+}
+
+function buildConfig(env) {
+  console.log(env);
+  if(env.desktop === true){
+    return require('./config/desktop.js')(configDirs);;
+  }
+  if (env.mobile === true) {
+    return require('./config/mobile.js')(configDirs);;
+  } 
+  console.log("Wrong webpack build parameter. Possible choices: 'desktop' or 'mobile' '.")
+}
+
+module.exports = buildConfig;

@@ -6,7 +6,7 @@ import '../scss/divider.scss';
 import '../scss/products.scss';
 import '../scss/share.scss';
 
-import {resolveProductsRequest} from "../js/products.js";
+import {resolveProductsRequest} from "./products.js";
 import {requestProducts} from "./requisition.js";
 
 document.querySelector(".transition.top").style.setProperty("border-right",`${screen.width}px solid transparent`);

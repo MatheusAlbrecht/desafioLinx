@@ -1,0 +1,22 @@
+.transition{
+    width: 100vw;
+    height: 50px;    
+    display: block;
+    border: 0px solid transparent;
+    // border-bottom: 50px solid #ffffff;
+    // border-right: 1280px solid transparent;    
+    &.top{
+        background-color: #707070;
+        border-bottom: 50px solid #ffffff;
+        border-right: 1280px solid transparent;        
+    }
+    &.bottom{
+        margin-top: 50px;
+        background-color: #ffffff;
+        border-bottom: 50px solid #707070;
+        border-left: 1280px solid transparent;    
+    }
+    
+}
+
+
