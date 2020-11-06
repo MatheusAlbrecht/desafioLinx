@@ -8,7 +8,8 @@ module.exports = {
     main: [
       './src/js/main.js',
       './src/js/products.js',
-      './src/js/requisition.js'
+      './src/js/requisition.js',
+      './src/js/validation.js'
     ]
   },
   mode: "development",
