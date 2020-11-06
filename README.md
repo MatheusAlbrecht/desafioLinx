@@ -5,7 +5,7 @@ Projeto para Desafio Técnico p/ Linx
 ```
 npm install
 ```
-Código tem duas versões, a desktop e a mobile, cada uma com sua inicialização e arquivos separados
+Código tem duas versões, a desktop e a mobile, cada uma com sua inicialização, arquivos, e build separados
 # Para rodar o modo de desenvolvimento:
 ```
 npm run start: [ desktop | mobile ]
