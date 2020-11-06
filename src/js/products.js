@@ -20,7 +20,7 @@ export function resolveProductsRequest(requestResponse){
         minimumFractionDigits: 2
     }) 
     let container = document.querySelector("#product-lister");
-        container.innerHTML = ""; 
+        // container.innerHTML = ""; 
           
     parsedResponse.products.forEach((item)=>{        
         var product = document.createElement('div');
