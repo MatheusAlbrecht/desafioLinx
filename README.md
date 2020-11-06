@@ -7,5 +7,9 @@ npm install
 ```
 #Rodar modo desenvolvimento
 ```
-npm start:dev
+npm run start:dev
+```
+#Buildar para produção/live preview
+```
+npm run build
 ```
