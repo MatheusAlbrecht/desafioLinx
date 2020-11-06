@@ -1,7 +1,7 @@
 # desafioLinx
 Projeto para Desafio Técnico p/ Linx
 
-# Instalação das depências
+# Instalação das depêdencias
 ```
 npm install
 ```
